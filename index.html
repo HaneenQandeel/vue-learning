@@ -45,14 +45,25 @@
       </div>
 
       <div class="dynamic-css">
-          <h1>Computed Properties</h1>
-          <button v-on:click="a++">Add to A</button>
-          <button v-on:click="b++">Add to B</button>
-          <p>A - {{a}}</p>
-          <p>B - {{b}}</p>
-          <p>A + {{age}} = {{addToA()}}</p>
-          <p>B + {{age}} = {{addToB()}}</p>
-        </div>
+        <h1>Computed Properties</h1>
+        <button v-on:click="a++">Add to A</button>
+        <button v-on:click="b++">Add to B</button>
+        <p>A - {{a}}</p>
+        <p>B - {{b}}</p>
+        <p>A + {{age}} = {{addToA()}}</p>
+        <p>B + {{age}} = {{addToB()}}</p>
+      </div>
+
+      <div class="looping">
+        <h1>Looping</h1>
+        <ul>
+          <li v-for="character in characters">{{character}}</li>
+        </ul>
+        <ul>
+          <li v-for="ninja in ninjas">{{ninja}}</li>
+        </ul>
+      </div>
+
 
     </div>
 

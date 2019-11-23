@@ -9,7 +9,14 @@ var vm = new Vue({
     Yourname:'',
     Yourage: '',
     a :0,
-    b:0
+    b:0,
+    characters:['Ninja','Mario','Yoshi'],
+    ninjas:[
+      {name:'haneen',age:25},
+      {name:'hassan',age:20},
+      {name:'Ahmed',age:22}
+    ]
+
   },
   methods:{
     Greeting :function(time){
