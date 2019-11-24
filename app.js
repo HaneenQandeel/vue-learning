@@ -1,3 +1,20 @@
+Vue.component('greeting',{
+  template:'<p>Hey I am {{name}}.<button v-on:click="ChangeName">Change Name:</button></p>',
+  data: function(){
+    return {
+      name:'Haneen'
+    }
+
+  },
+  methods:{
+    ChangeName: function(){
+      this.name = 'Salem'
+    }
+
+  }
+})
+
+
 var vm = new Vue({
   el:'#app',
   data:{

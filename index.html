@@ -57,11 +57,16 @@
       <div class="looping">
         <h1>Looping</h1>
         <ul>
-          <li v-for="character in characters">{{character}}</li>
+          <li v-for="(character,index) in characters">{{index}}-{{character}}</li>
         </ul>
         <ul>
-          <li v-for="ninja in ninjas">{{ninja}}</li>
+          <li v-for="(ninja,index) in ninjas">{{index}}.{{ninja.name}}.{{ninja.age}}</li>
         </ul>
+      </div>
+
+      <div class="componant">
+        <h1>Componant</h1>
+        <greeting></greeting>
       </div>
 
 
